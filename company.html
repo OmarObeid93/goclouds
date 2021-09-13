@@ -1,0 +1,65 @@
+<html>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+<head>
+    <title>
+        company
+    </title>
+</head>
+
+<body style="margin:auto ; text-align:center ; align:center">
+    <!-- ="company.html" method="POST" -->
+	</br>
+	
+	<div class="column is-6 is-offset-3 is-8-mobile is-offset-2-mobile">
+	<!--<div class="column is-6 is-offset-3 ">-->
+	<div class="box">
+    <form id="Lcalculate">
+	
+        <div class="container">
+            <label for="type">Please choose the desired package:</label>
+			<div class="select is-primary">
+            <select id="type">
+                <option>Google Starter</option>
+                <option>Google Standard</option>
+            </select>
+			</div>
+        </div>
+
+		<div>
+            <label for="licenses">Please enter the number of licenses: </label>
+            <input max-width="4" class="input is-rounded" class="column is-one-third" id="licenses" type="number" placeholder="Normal input">
+			</br>
+			
+		</div>
+
+        <!-- <input type="submit" name=""> -->
+    </form>
+	
+	<label class="label">
+    <p id="calculation">
+
+    </p>
+	</label>
+    <div class="container">
+        Would this require configuration ?         <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+        <p id="text" style="display:none">the configuration cost is</p>
+    </div>
+        </br>       
+    <div class="container">
+        Would this require migration ?          <input type="checkbox" id="myCheck1" onclick="myFunction1()">
+        <p id="text1" style="display:none">the migration cost is:</p>
+    </div>
+    </br>
+    <p id="text2" >the total cost is:</p>
+	</div>
+	</div>
+    
+
+    
+    <script src="company.js"></script>
+</body>
+
+</html>
